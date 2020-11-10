@@ -3,13 +3,11 @@ import matplotlib.pyplot as plt
 
 def prediction(theta_0, theta_1, x):
     """주어진 학습 데이터 벡터 x에 대해서 모든 예측 값을 벡터로 리턴하는 함수"""
-    # 지난 과제 코드를 갖고 오세요
     return theta_0 + theta_1*x
     
     
 def prediction_difference(theta_0, theta_1, x, y):
     """모든 예측 값들과 목표 변수들의 오차를 벡터로 리턴해주는 함수"""
-    # 지난 과제 코드를 갖고 오세요
     return prediction(theta_0, theta_1, x) - y
     
 def gradient_descent(theta_0, theta_1, x, y, iterations, alpha):
